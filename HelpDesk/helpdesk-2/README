@@ -1,0 +1,48 @@
+#Purpose of Project: Create a Helpdesk Ticket System
+
+#Components: Login page
+            Dashboard page
+            Ticket page
+            Reporting page
+            Help/FAQ page
+            Admin page
+            Ticket Creating page
+            Profile page
+            Database
+
+#Login Page - Design has been finalized. Need to add functionality for Email/ Password verification. 
+            Need to create a registration form for New Users. Need to be able to store new user info after registration.
+
+
+#Dashboard Page - Design has been finalized. Need to display ticket info in the cards section (Number of Open, Overdue, Unassigned, and Watched tickets).
+            Display a quick view of tickets in System on ticket table. Display number of tickets by Priority that are currently in system.
+
+
+#Ticket Page - Display all tickets in system that are not "Closed." Need to be able to sort table from Table Header. Need to be able to select and change certain fields(Status, 
+            Priority, Assigned To). Need to be able to filter through tickets. Has a table with static data for reference.
+
+
+#Reporting Page - Needs to be added. Create list of different reports to view and export from tickets in system(Need to be links to show graphs of the select report).
+            Display info from reports on graphs. Be able to filter reports. Ability to create new reports. Report download in CSV format.
+
+
+#Help/FAQ Page -  Will have articles for all documentation.
+
+
+#Admin Page - Will have all settings. Account settings, User Management settings, Channels settings, Service Management settings, Automation and Productivity settings.
+
+
+#Ticket Creating Page - Design may be changed later. Need to be able to submit and store new tickets after being entered in system.
+
+
+#Profile Page - Design has been finalized. Have a upload a profile picture button. Update/ Edit button for Profile info.
+
+
+#Database - Used to store user and ticket information that has been entered in system.
+
+
+Priority List:
+#1. Finish creating and designing remaining pages.
+    -Reporting 
+    -Help/FAQ
+    -Admin

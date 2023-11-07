@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporting</title>
+
+    <link rel="stylesheet" href="../reports/report.css">
+    <script src="../reports/report.js"></script>
+    
+    
+</head>
+<body>
+    <!--SIDE MENU-->
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>SKU2U HelpDesk</h1>
+        </div>
+        <ul>
+            <li>
+                <span onclick="document.location = '../dashboard/dashboard.html '">Dashboard</span>
+            </li>
+            <li>
+                <span onclick="document.location = '../tickets/ticket.html'">Tickets</span>
+            </li>
+            <li>
+                <span>Reporting</span>
+            </li>
+            <li>
+                <span>Help</span>
+            </li>
+            <li>
+                <span onclick="document.location = '../admin/admin.html'">Admin</span>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACoElEQVR4nO2Zy2oUQRSGv1kYd640LcQsJq5dihova6MrYXQSIojxAQQvGISoO/UBBHcaFAnBTTKStUY3XvIGbjRu1Gw0mBgnZuTA31CGFpxMVU1P0h80NFM9/6nTVXXq1GkoKCgIyW5gBBgH5oAF4Jeur8A7tZ0HEnLIMaAG1IHGf1727DRwlBywF5hxOrcKvAAuAQeAbmCbLrs/CFwGZvVs+r9nQF+7nBgGFtWRH8BtYFcT/zfH7gBL0vgODBGZG87bnAB6WtDaA0w6emNE4pYMrum+5En3IvA7ljPDMmQGKwH0TzvODBJwYadr4looI8Cos2bKIQzMOGsiJCVnzdRC7BMNRZhewtOjSNgAjvgUrknUQmwsLDSbzSmfaUddG1gz+0Sr2D6zqvTG7lvmgt7Mc+LzUrbP+RAbl5ilHbG5ItsPfIjNScxyp9j0y/YbH2ILEstaHyeBT8A8MBCgPZHtLx78YEViXRlt806O9DFA+3a1/dwsjiyGnloD6ox14niA9kS23/tc7HYois1h2bYwvCnC730fYiMSs+NpbF7J9ikfYomTonhJFTaQouzwJTqtN2OJXCzuyuYTn6KHJLocOY1fA/b5Fk9T+UmP5/QsTPupY8s7ZR0/GzqOhuK6bHwOWY0ccooPVijwzRlp25Q6QWDGHGdGPU2zkkYiraBYtKoSgdSZdB5bkW2j9DprYn1tuEoEBp01s6TQ3Mw+060QuyyNbxlF8HosZ8pONEunxKxSi34t1i5diX67qtzJLWI/Vm2g2k5nUMlmqsnPCnbGeATs52/a7kw6XaxQ8BB4q487K9rcPgCvgXvq1E7+TS6c8YXVltc7Y9PxLB1IpXAmp1SKkckplWJkcko1Y2TsAy2dPs1u0uFUO3kk2FL8AR2vN2/JBsCEAAAAAElFTkSuQmCC">
+                    </button>
+                </div>
+                <div class="quick-btns">
+                    <button class="create-ticket" onclick="document.location = '../create/create.html'">
+                        <h3>Create Ticket</h3>
+                    </button>
+                    <button class="profile" onclick="document.location = '../profile/profile.html'">
+                        <h3>Profile</h3>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <canvas id="myChart" style="width: 100%; max-width: 700px;"></canvas>
+    </div>

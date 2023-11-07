@@ -1,0 +1,197 @@
+.side-menu {
+    position: fixed;
+    background: rgb(0, 170, 255);
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.side-menu .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+h3 {
+    color: #999;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.side-menu li {
+    font-size: 24px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.side-menu li:hover {
+    background: white;
+    color: rgb(0, 170, 255);
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 150vh;
+    background: #f1f1f1;
+}
+
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.container .header .nav .search {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.container .header .nav .user img {
+    width: 40px;
+    height: 40px;
+}
+
+.container .header .nav .quick-btns {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    justify-content: right;
+    
+}
+
+.quick-btns {
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    color: rgb(0, 170, 255);
+}
+
+.container .header .nav .quick-btns .create-ticket {
+    background-color: rgb(0, 170, 255);
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+.container .header .nav .quick-btns .create-ticket:hover, .container .header .nav .quick-btns .create-ticket:focus {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.container .header .nav .quick-btns .profile {
+     background-color: rgb(0, 170, 255);
+     color: white;
+     padding: 1px;
+     font-size: 12px;
+     border: none;
+     border-radius: 4px;
+     margin: 5px;
+}
+
+.container .header .nav .quick-btns .profile:hover, .container .header .nav .quick-btns .profile:focus {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.container .header .nav .search input[type="text"] {
+    border: none;
+    background: #f1f1f1;
+    padding: 10px;
+    width: 50%;
+}
+
+.container .header .nav .search button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container .header .nav .search button img {
+    width: 30px;
+    height: 30px;
+}
+
+.container .content {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+}
+
+.container .content .title {
+    color: #444;
+    padding: 10px;
+}
+
+.container .content p {
+    font-size: 14px;
+    padding: 10px;
+}

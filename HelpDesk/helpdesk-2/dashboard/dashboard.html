@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../dashboard/dashboard.css">
+    <script src="../dashboard/dashboard.js"></script>
+</head>
+<body>
+    <!--SIDE MENU-->
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>SKU2U HelpDesk</h1>
+        </div>
+        <ul>
+            <li>
+                <span>Dashboard</span>
+            </li>
+            <li>
+                <span onclick="document.location = '../tickets/ticket.html'">Tickets</span>
+            </li>
+            <li>
+                <span onclick="document.location = '../reports/report.html'">Reporting</span>
+            </li>
+            <li>
+                <span>Help</span>
+            </li>
+            <li>
+                <span onclick="document.location = '../admin/admin.html'">Admin</span>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACoElEQVR4nO2Zy2oUQRSGv1kYd640LcQsJq5dihova6MrYXQSIojxAQQvGISoO/UBBHcaFAnBTTKStUY3XvIGbjRu1Gw0mBgnZuTA31CGFpxMVU1P0h80NFM9/6nTVXXq1GkoKCgIyW5gBBgH5oAF4Jeur8A7tZ0HEnLIMaAG1IHGf1727DRwlBywF5hxOrcKvAAuAQeAbmCbLrs/CFwGZvVs+r9nQF+7nBgGFtWRH8BtYFcT/zfH7gBL0vgODBGZG87bnAB6WtDaA0w6emNE4pYMrum+5En3IvA7ljPDMmQGKwH0TzvODBJwYadr4looI8Cos2bKIQzMOGsiJCVnzdRC7BMNRZhewtOjSNgAjvgUrknUQmwsLDSbzSmfaUddG1gz+0Sr2D6zqvTG7lvmgt7Mc+LzUrbP+RAbl5ilHbG5ItsPfIjNScxyp9j0y/YbH2ILEstaHyeBT8A8MBCgPZHtLx78YEViXRlt806O9DFA+3a1/dwsjiyGnloD6ox14niA9kS23/tc7HYois1h2bYwvCnC730fYiMSs+NpbF7J9ikfYomTonhJFTaQouzwJTqtN2OJXCzuyuYTn6KHJLocOY1fA/b5Fk9T+UmP5/QsTPupY8s7ZR0/GzqOhuK6bHwOWY0ccooPVijwzRlp25Q6QWDGHGdGPU2zkkYiraBYtKoSgdSZdB5bkW2j9DprYn1tuEoEBp01s6TQ3Mw+060QuyyNbxlF8HosZ8pONEunxKxSi34t1i5diX67qtzJLWI/Vm2g2k5nUMlmqsnPCnbGeATs52/a7kw6XaxQ8BB4q487K9rcPgCvgXvq1E7+TS6c8YXVltc7Y9PxLB1IpXAmp1SKkckplWJkcko1Y2TsAy2dPs1u0uFUO3kk2FL8AR2vN2/JBsCEAAAAAElFTkSuQmCC">
+                    </button>
+                </div>
+                <div class="quick-btns">
+                    <button class="create-ticket" onclick="document.location = '../create/create.html'">
+                        <h3>Create Ticket</h3>
+                    </button>
+                    <button class="profile" onclick="document.location = '../profile/profile.html'">
+                        <h3>Profile</h3>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1 class="ticket-color">4</h1>
+                        <h3>Open Tickets</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1 class="ticket-color-one">15</h1>
+                        <h3>Overdue Tickets</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1 class="ticket-color-two">5</h1>
+                        <h3>Unassigned Tickets</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1 class="ticket-color-three">3</h1>
+                        <h3>Pending Tickets</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="content-2">
+                <div class="show-tickets">
+                    <div class="title">
+                        <h2>Ticket Preview</h2>
+                        <a href="../tickets/ticket.html" class="btn">View All</a>
+                    </div>
+                    <table id="data-info">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Requester</th>
+                            <th>Status</th>
+                            <th>Priority</th>
+                        </tr>
+                        <tr >
+                            <td id="data-sub"></td>
+                            <td id="data-request"></td>
+                            <td id="data-stat"></td>
+                            <td id="data-priority"></td>
+                        </tr>
+                        <tr>
+                            <td id="data-sub-one"></td>
+                            <td id="data-request-one"></td>
+                            <td id="data-stat-one"></td>
+                            <td id="data-priority-one"></td>
+                        </tr>
+                        <tr>
+                            <td id="data-sub-two"></td>
+                            <td id="data-request-two"></td>
+                            <td id="data-stat-two"></td>
+                            <td id="data-priority-two"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td id="data-sub-three"></td>
+                            <td id="data-request-three"></td>
+                            <td id="data-stat-three"></td>
+                            <td id="data-priority-three"></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="priority-tickets">
+                    <div class="title">
+                        <h2>Number of Tickets by Priority</h2>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Status</th>
+                                <th>Number of Tickets</th>
+                            </tr>
+                            <tr>
+                                <td id="low-ticket">Low</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td id="med-ticket">Medium</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td id="high-ticket">High</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td id="urgent-ticket">Urgent</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

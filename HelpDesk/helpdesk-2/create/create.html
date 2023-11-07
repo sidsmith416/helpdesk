@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Ticket</title>
+
+    <link rel="stylesheet" href="../create/create.css">
+    <script src="../create/create.js"></script>
+</head>
+<body>
+    <!--SIDE MENU-->
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>SKU2U HelpDesk</h1>
+        </div>
+        <ul>
+            <li>
+                <span onclick="document.location = '../dashboard/dashboard.html'">Dashboard</span>
+            </li>
+            <li>
+                <span>Tickets</span>
+            </li>
+            <li>
+                <span>Reporting</span>
+            </li>
+            <li>
+                <span>Help</span>
+            </li>
+            <li>
+                <span>Admin</span>
+            </li>
+        </ul>
+    </div>
+
+    <!--NAVBAR-->
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACoElEQVR4nO2Zy2oUQRSGv1kYd640LcQsJq5dihova6MrYXQSIojxAQQvGISoO/UBBHcaFAnBTTKStUY3XvIGbjRu1Gw0mBgnZuTA31CGFpxMVU1P0h80NFM9/6nTVXXq1GkoKCgIyW5gBBgH5oAF4Jeur8A7tZ0HEnLIMaAG1IHGf1727DRwlBywF5hxOrcKvAAuAQeAbmCbLrs/CFwGZvVs+r9nQF+7nBgGFtWRH8BtYFcT/zfH7gBL0vgODBGZG87bnAB6WtDaA0w6emNE4pYMrum+5En3IvA7ljPDMmQGKwH0TzvODBJwYadr4looI8Cos2bKIQzMOGsiJCVnzdRC7BMNRZhewtOjSNgAjvgUrknUQmwsLDSbzSmfaUddG1gz+0Sr2D6zqvTG7lvmgt7Mc+LzUrbP+RAbl5ilHbG5ItsPfIjNScxyp9j0y/YbH2ILEstaHyeBT8A8MBCgPZHtLx78YEViXRlt806O9DFA+3a1/dwsjiyGnloD6ox14niA9kS23/tc7HYois1h2bYwvCnC730fYiMSs+NpbF7J9ikfYomTonhJFTaQouzwJTqtN2OJXCzuyuYTn6KHJLocOY1fA/b5Fk9T+UmP5/QsTPupY8s7ZR0/GzqOhuK6bHwOWY0ccooPVijwzRlp25Q6QWDGHGdGPU2zkkYiraBYtKoSgdSZdB5bkW2j9DprYn1tuEoEBp01s6TQ3Mw+060QuyyNbxlF8HosZ8pONEunxKxSi34t1i5diX67qtzJLWI/Vm2g2k5nUMlmqsnPCnbGeATs52/a7kw6XaxQ8BB4q487K9rcPgCvgXvq1E7+TS6c8YXVltc7Y9PxLB1IpXAmp1SKkckplWJkcko1Y2TsAy2dPs1u0uFUO3kk2FL8AR2vN2/JBsCEAAAAAElFTkSuQmCC">
+                    </button>
+                </div>
+                <div class="quick-btns">
+                    <button class="create-ticket" href="#">
+                        <h3>Create Ticket</h3>
+                    </button>
+                    <button class="profile" onclick="document.location = '../profile/profile.html'">
+                        <h3>Profile</h3>
+                    </button>
+                </div>
+            </div>  
+        </div>
+
+        <!--FORM-->
+        <div class="content">
+            <div class="form-title">Submit a Ticket</div>
+            <div class="form">
+                <div class="form-item">
+                    <label for="requester">Requester</label><br>
+                    <input type="text" id="requester"><br><br>
+
+                    <label for="subject">Subject</label><br>
+                    <input type="text" id="subject"><br><br>
+
+                    <label for="status">Status</label><br>
+                    <input type="text" id="status"><br><br>
+
+                    <label for="priority">Priority</label><br>
+                    <select name="level" id="select">
+                        <option value="blank"></option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select><br><br>
+
+                    <label for="urgency">Urgency</label><br>
+                    <select name="level" id="select">
+                        <option value="blank"></option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select><br><br>
+
+                    <label for="agent">Agent</label><br>
+                    <input type="text" id="agent"><br><br>
+
+                    <label for="department">Department</label><br>
+                    <input type="text" id="dept"><br><br>
+
+                    <label for="group">Group</label><br>
+                    <input type="text" id="group"><br><br>
+
+                    
+                
+                
+                </div>
+                <div class="form-item2">
+                    <label for="description">Description</label><br>
+                    <input type="text" id="describe" class="describe"><br><br>
+                    <div class="attach">
+                        <a href="#">Attach a file</a>
+                    </div>
+                    <button class="submit">Submit</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>
